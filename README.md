@@ -39,3 +39,15 @@ Start time: 8:35pm
 Finish time: 8:36pm
 
 Actual time needed to complete: 1 minutes
+
+## Lab 03
+
+Number and name of feature: Display a Modal
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 11:10PM
+
+Finish time: 11:50PM
+
+Actual time needed to complete: 40 min - still working on trying to implement
