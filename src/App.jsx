@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Data from 'assets/data.json';
 import './App.css'
 import Row from 'react-bootstrap/Row'
 import Header from './Header.jsx'
@@ -12,7 +13,7 @@ function App() {
     <>
       <Header></Header>
       <Row xs="auto" md="auto" lg="auto">
-        <Gallery></Gallery>
+        <Gallery data={Data} ></Gallery>
       </Row>
       <Footer></Footer>
     </>
