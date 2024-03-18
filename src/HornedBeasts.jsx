@@ -1,0 +1,27 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
+
+
+const HornedBeasts = (props) => {
+  console.log(props);
+    
+    return (
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={props.imageUrl} alt="horned beast image" />
+          <Card.Body>
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Text>
+              {props.description}
+            </Card.Text>
+            <p>Number of Horns: {props.horns}</p>
+            <Button variant="primary">  ♥ </Button>
+          </Card.Body>
+        </Card>
+      );
+    }
+  
+
+export default HornedBeasts;

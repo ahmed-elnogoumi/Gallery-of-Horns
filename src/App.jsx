@@ -1,7 +1,8 @@
 import './App.css'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Gallery from './Gallery.jsx'
+import Header from './Header.jsx';
+import Gallery from './Gallery.jsx';
+import Footer from './Footer.jsx';
+
 
 
 function App() {

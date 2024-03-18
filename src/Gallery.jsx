@@ -1,27 +1,39 @@
-import HornedBeast from './HornedBeast.jsx'
-import Data from './src/data.json'
+import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HornedBeasts from "./HornedBeasts";
+import data from './assets/data.json';
 
-function Gallery() {
+const Gallery = (props) => {
+    console.log(props);
+
+    const [selectedHorns, setSelectedHorns] = useState(null);
+
+    const handleDropdownClick = (horns) => {
+        setSelectedHorns(horns);
+    }
+
+    const filteredData = selectedHorns ? data.filter(item => item.horns === selectedHorns) : data;
+
     return (
         <>
-            function App() {
+            <div>
+                <h2>Gallery</h2>
+            <div>
+                {filteredData.map(obj => {
                 return (
-                    <div>
-                    {data.map((item) => (
-                        <HornedBeast
-                        key={item._id}
-                        title={item.title}
-                        image_url={item.image_url}
-                        description={item.description}
-                        keyword={item.keyword}
-                        horns={item.horns}
-                        />
-                    ))}
-    </div>
-  );
-}
+                    <HornedBeasts 
+                    key = {obj._id}
+                    title = {obj.title} 
+                    description = {obj.description} 
+                    imageUrl = {obj.image_url}
+                    horns = {obj.horns}
+                    />  
+                    )
+                    })}
+                </div>
+            </div>
         </>
-    )
-}
+    );
+};
 
-export default Gallery 
+export default Gallery;
