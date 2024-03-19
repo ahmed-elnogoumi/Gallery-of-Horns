@@ -17,7 +17,7 @@ const HornedBeasts = (props) => {
   const handleShow = () => setShow(true);
 
   return (
-    <>
+    <> {/* Fragment for placing image in the card, modal separately */}
       <Card style={{ width: '18rem' }}>
         <Image src={props.imageUrl} alt={props.description} onClick={handleShow} /> 
         <Card.Body>
