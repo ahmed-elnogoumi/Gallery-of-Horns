@@ -51,3 +51,5 @@ Start time: 11:10PM
 Finish time: 11:50PM
 
 Actual time needed to complete: 40 min - still working on trying to implement
+
+![Lighthouse Score](Lighthouse-Score.png)
